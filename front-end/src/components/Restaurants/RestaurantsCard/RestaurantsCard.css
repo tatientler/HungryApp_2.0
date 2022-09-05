@@ -2,10 +2,6 @@ body {
     padding-bottom: 30px;
 }
 
-.teste {
-    display: flex;
-}
-
 .img-logo {
     height: 53px;
     width: 53px;
@@ -22,11 +18,7 @@ body {
     margin-bottom: 0;
 }
 
-.hide {
-    display: none !important;
-}
-
-.check-icon, .dollar-icon {
+.check-icon {
     color: #08da08;
 }
 
@@ -34,7 +26,7 @@ body {
     color: #caca01;
 }
 
-.icon {
+.watch-icon {
     color: #d93d86;
 }
 
