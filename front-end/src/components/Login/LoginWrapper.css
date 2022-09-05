@@ -1,0 +1,62 @@
+.bg-img {
+    background: url('./img/001.jpg') top center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-wrapper {
+    background-color: #fefefe;
+    border-radius: 25px;
+    opacity: 0.95;
+    margin:auto;
+    height: 300px;
+    width: 400px;
+    max-width:400px;
+    min-height:550px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h1 {
+    color: #4f4f4f;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.option {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.new-user {
+    font-size: 0.9rem;
+}
+
+.new-user a {
+    color: #000;
+    text-decoration: none;
+}
+
+.new-user a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 940px) {
+    .bg-img {
+        background: url('./img/pexels-brigitte-tohm-239581.jpg') top center no-repeat fixed;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .login-wrapper {
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(40%, -50%);
+    }
+}

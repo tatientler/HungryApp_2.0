@@ -1,0 +1,26 @@
+.delivery-type {
+    overflow: auto;
+}
+
+.delivery-type::-webkit-scrollbar {
+    display: none;
+}
+
+.icon {
+    color: #d93d86;
+}
+
+.dollar-icon, .check-icon {
+    color: #08da08;
+}
+
+.badge {
+    background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 640px) {
+    .delivery-type {
+        display: flex;
+        justify-content: center;
+    }
+}

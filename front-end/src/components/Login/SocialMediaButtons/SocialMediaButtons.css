@@ -1,0 +1,12 @@
+.google, .facebook {
+    height: 18px;
+}
+
+.btn.btn-social-media {
+    border-radius: 50px;
+}
+
+.btn.btn-social-media:hover {
+    background-color: #4f4f4f23;
+    color: #000;
+}

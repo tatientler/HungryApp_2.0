@@ -1,0 +1,30 @@
+.forgot-password {
+    color: #000000;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.btn-enter {
+    background-color: #d93d86;
+    border: #d93d86;
+    border-radius: 50px;
+    color: #fefefe;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-enter:hover, .btn-enter:active {
+    background-color: #d93d86;
+    color: #fefefe;
+    font-weight: bold;
+}
+
+.checkbox {
+    color: #000000;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,58 @@
+body {
+    padding-bottom: 30px;
+}
+
+.teste {
+    display: flex;
+}
+
+.img-logo {
+    height: 53px;
+    width: 53px;
+    border-radius: 100px;
+}
+
+.h2 {
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.restaurant-description {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+.hide {
+    display: none !important;
+}
+
+.check-icon, .dollar-icon {
+    color: #08da08;
+}
+
+.star-icon {
+    color: #caca01;
+}
+
+.icon {
+    color: #d93d86;
+}
+
+.gps-icon {
+    color: #ff0000;
+}
+
+@media screen and (min-width: 940px) {
+    .img-logo {
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+    .restaurant-card:hover {
+        transition: .5s linear;
+        transform: scale(1.05);
+        box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.616);
+        border-radius: 10px;
+        background-color: #f0f0f0c0;
+    }
+}

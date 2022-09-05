@@ -1,0 +1,69 @@
+body {
+    padding-bottom: 30px;
+}
+
+p {
+    color: #8c8c8c;
+    margin-bottom: 0.3rem;
+}
+
+.restaurant-header-wrapper {
+    height: 380px;
+}
+
+.img-restaurant {
+    width: 100%;
+}
+
+.restaurant-header {
+    background-color: #fefefe;
+    position: relative;
+    top: -40px;
+    border: 1px solid rgb(245, 247, 251);
+    border-radius: 50px 50px 0 0;
+    border-bottom: 2px solid rgb(245, 247, 251);
+    box-shadow: 1px 1px 1px #8c8c8c33;
+}
+
+.img-logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 100px;
+    border: 1px solid #8c8c8c33;
+}
+
+.h2 {
+    font-size: 1rem;
+}
+
+.restaurant-description {
+    font-size: 0.8rem;
+}
+
+.phone {
+    color: #363636;
+}
+
+.star-icon {
+    color: #caca01;
+}
+
+.icon, .address {
+    color: #d93d86;
+}
+
+.gps-icon {
+    color: #ff0000;
+}
+
+.hide {
+    display: none !important;
+}
+
+@media screen and (min-width: 640px) {
+    .restaurant-header-wrapper {
+        height: 530px;
+    }
+
+    
+}
