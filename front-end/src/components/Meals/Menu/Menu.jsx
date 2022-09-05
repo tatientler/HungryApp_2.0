@@ -20,7 +20,7 @@ export function Menu({
                 <Card  className="dish-card" style={{ width: '100%' }}>
                     <Card.Body >
                         <Row >
-                            <Col xs={3} md={4} lg={3} className="d-flex align-self-center justify-content-center">
+                            <Col xs={3} md={4} lg={4} className="d-flex align-self-center justify-content-center">
                                 <img className="img-dish me-3 " src={dishAvatar} alt="Ilustração do prato" />
                             </Col>
 
