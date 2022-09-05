@@ -3,9 +3,11 @@
 }
 
 .dish-card {
+    /*
     background-color: #fefefe;
     border: 1px solid #8c8c8c33;
     border-radius: 15px;
+    */
     box-shadow: 0.1rem 0.1rem 0.4rem #8c8c8c33;
     position: relative;
 }
@@ -46,15 +48,15 @@
 
 .add-btn {
     position: absolute;
-    right: -7.5px;
-    bottom: 0;
-    width: 50px !important;
+    right: 22.8px;
+    bottom: -1px;
+    width: 30px !important;
 }
 
 .add-btn button {
     background-color: #d93d86;
     border: 1px solid #d93d86;
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 6px 0;
     height: 25px;
 }
 

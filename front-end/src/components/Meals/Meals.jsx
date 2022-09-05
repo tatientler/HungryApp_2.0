@@ -4,6 +4,9 @@ import { SearchBar } from "../SearchBar/SearchBar";
 import { Footer } from "../Footer/Footer"
 import { Menu } from './Menu/Menu'
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 export function Meals({
     restaurant
 }) {
@@ -13,8 +16,8 @@ export function Meals({
             <RestaurantHeader restaurant={restaurant} />
             <SearchBar />
 
-            <div className="container">
-                <div className="row">
+            <Container>
+                <Row>
                     {
                         restaurant.meals.map((menu) =>
                             <Menu
@@ -27,8 +30,10 @@ export function Meals({
                             />
                         )
                     }
-                </div>
-            </div>
+
+                </Row>
+            </Container>
+            
             <Footer />
         </>
     )

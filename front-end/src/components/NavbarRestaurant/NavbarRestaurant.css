@@ -1,16 +1,13 @@
 .back-btn {
-    border: none;
     color: #d93d86;
 }
 
 .logo {
     width: 35px;
-    padding: 5px;
 }
 
-.exit-icon {
-    color: #d93d86;
-    display: none;
+.div-img {
+    margin-right: 0 !important;
 }
 
 @media screen and (min-width: 940px) {

@@ -12,10 +12,10 @@ export function Footer() {
             <Navbar bg="light" variant="light" fixed='bottom' >
                 <Container>
                     <Nav className="me-auto">
-                        <Nav.Link href="/#"><AiOutlineHome className="icon" /></Nav.Link>
-                        <Nav.Link href="/#"><AiOutlineShoppingCart className="icon" /></Nav.Link>
-                        <Nav.Link href="/#"><BsPersonCircle className="icon" /></Nav.Link>
-                        <Nav.Link href="/#"><BsBoxArrowLeft className="icon" /></Nav.Link>
+                        <Nav.Link className='d-flex align-items-center' href="/#"><AiOutlineHome className="icon" /></Nav.Link>
+                        <Nav.Link className='d-flex align-items-center' href="/#"><AiOutlineShoppingCart className="icon" /></Nav.Link>
+                        <Nav.Link className='d-flex align-items-center' href="/#"><BsPersonCircle className="icon" /></Nav.Link>
+                        <Nav.Link className='d-flex align-items-center' href="/#"><BsBoxArrowLeft className="icon" /></Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

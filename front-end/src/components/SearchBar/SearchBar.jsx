@@ -7,21 +7,21 @@ import './SearchBar.css'
 
 export function SearchBar() {
     const [value, setValue] = useState('')
-    
+
     return (
         <>
             <div className="container">
                 <div className="search-filter-wrapper m-2">
                     <div className="row ms-1 me-1 mb-1">
                         <div className="d-flex search col-8">
-                            <input 
-                                className="search-bar p-2" 
-                                type="search" 
-                                name="Search" 
-                                id="search" 
+                            <input
+                                className="search-bar p-2"
+                                type="search"
+                                name="Search"
+                                id="search"
                                 //value={value}
                                 //onChange={(e) => setValue(e.target.value)}
-                                placeholder="Pesquisar" 
+                                placeholder="Pesquisar"
                             />
 
                             <button className="search-btn" id="search-btn" type="submit">
