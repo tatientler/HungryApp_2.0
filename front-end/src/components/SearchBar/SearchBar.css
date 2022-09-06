@@ -1,39 +1,30 @@
 .search {
     border: 2px solid rgb(245, 247, 251);
     border-radius: 10px;
-    height: 35px;
-}
-
-.search-navbar {
-    background-color: #fefefe;
-    border: 2px solid rgb(245, 247, 251);
-    border-radius: 10px;
+    height: 40px;
 }
 
 .search-bar {
     background-color: #fefefe;
-    border: none;
+    border: none !important;
     border-radius: 10px 0 0 10px;
     outline: none;
     width: 100%;
 }
 
-.search-btn {
+#search-btn {
     background-color: #fefefe;
     border: none;
     border-radius: 0 10px 10px 0;
 }
 
-.filter-btn {
+#filter-btn {
     background-color: #fefefe;
     border: 2px solid rgb(245, 247, 251);
     border-radius: 10px;
+    color: #646464;
 }
 
-.search-filter-wrapper {
-    position: relative;
-}
-
-.icon {
+.search-icon, .filter-icon {
     color: #d93d86;
 }

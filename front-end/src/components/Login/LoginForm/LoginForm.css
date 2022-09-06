@@ -9,7 +9,7 @@
     text-decoration: underline;
 }
 
-.btn-enter {
+#btn-enter {
     background-color: #d93d86;
     border: #d93d86;
     border-radius: 50px;
@@ -18,7 +18,7 @@
     margin-bottom: 10px;
 }
 
-.btn-enter:hover, .btn-enter:active {
+#btn-enter:hover, #btn-enter:active {
     background-color: #d93d86;
     color: #fefefe;
     font-weight: bold;

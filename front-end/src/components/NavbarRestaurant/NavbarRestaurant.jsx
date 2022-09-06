@@ -12,10 +12,10 @@ export function NavbarRestaurant() {
 
     return (
         <>
-            <Navbar bg="light" variant="light">
+            <Navbar className="navbar-restaurant">
                 <Container>
                     <Nav className="me-auto">
-                        <Nav.Link className="back-btn" onClick={() => navigate(-1)}>
+                        <Nav.Link id="back-btn" onClick={() => navigate(-1)}>
                             <AiOutlineDoubleLeft />
                         </Nav.Link>
                     </Nav>

@@ -55,14 +55,14 @@ export function LoginForm() {
                 </Form.Group>
 
                 <Form.Group className="checkbox" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Salvar informações de login" />
+                    <Form.Check type="checkbox" label="Lembrar-me" />
                 </Form.Group>
 
                 <a className="forgot-password" href="/#">
                     <p>Esqueci minha senha</p>
                 </a>
 
-                <Button className="btn-enter" href='/#' onClick={() => openNotificationWithIcon('error')}>
+                <Button id="btn-enter" href='/#' onClick={() => openNotificationWithIcon('error')}>
                     Entrar
                 </Button>
             </Form>
