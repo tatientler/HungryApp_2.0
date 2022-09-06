@@ -7,6 +7,12 @@ import {
 } from "react-icons/bs";
 import { AiOutlineEnvironment } from "react-icons/ai";
 
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Badge from 'react-bootstrap/Badge';
+
 import './RestaurantHeader.css'
 
 export function RestaurantHeader({
@@ -15,53 +21,52 @@ export function RestaurantHeader({
 
     return (
         <>
-            <div className="restaurant-header-wrapper container" >
-                <div className="d-flex justify-content-center">
-                    <img src={restaurant.backgroundImage} className="img-restaurant" alt="Prato ilustrativo" />
-                </div>
+            <Container>
+                <Card>
+                    <Card.Img variant="top" src={restaurant.backgroundImage} className="img-restaurant d-flex justify-content-center" alt="Prato ilustrativo" />
+                    <Card.Body className="restaurant-header">
+                        <Row >
+                            <Col xs={2} md={2} lg={3} className="d-flex align-self-center justify-content-center">
+                                <img className="img-logo" src={restaurant.avatar} alt="Logo do restaurante" />
+                            </Col>
 
-                <div className="container restaurant-header">
-                    <div className="row p-1 pb-3 ">
-                        <div className="col-2 d-flex align-self-center justify-content-center">
-                            <img className="img-logo" src={restaurant.avatar} alt="Logo do restaurante" />
-                        </div>
+                            <Col xs={10} md={10} lg={9} className='mb-2'>
+                                <Card.Title className="h2 text-overflow">
+                                    <span>{restaurant.name}</span>&nbsp;
+                                    <BsPatchCheckFill className="check-icon" />
+                                </Card.Title>
 
-                        <div className="col-10 mt-2">
-                            <h2 className="h2 text-overflow">
-                                <span>{restaurant.name}</span>&nbsp;
-                                <BsPatchCheckFill className="check-icon" />
-                            </h2>
+                                <Card.Text className="restaurant-description text-overflow d-flex align-items-center">
+                                    <AiOutlineEnvironment className="address" />&nbsp;
+                                    <span>{restaurant.address}</span>
+                                </Card.Text>
 
-                            <p className="restaurant-description text-overflow d-flex align-items-center">
-                                <AiOutlineEnvironment className="address" />&nbsp;
-                                <span>{restaurant.address}</span>
-                            </p>
+                                <Card.Text className="restaurant-description d-flex align-items-center">
+                                    <BsFillTelephoneFill className="phone" />&nbsp;
+                                    <span>{restaurant.phone}</span>
+                                </Card.Text>
 
-                            <p className="restaurant-description d-flex align-items-center">
-                                <BsFillTelephoneFill className="phone" />&nbsp;
-                                <span>{restaurant.phone}</span>
-                            </p>
+                                <Card.Text className="d-flex mt-2">
+                                    <Badge bg="badge" text="dark" className="d-flex align-items-center me-2">
+                                        <BsStarHalf className="star-icon" />&nbsp;
+                                        <span>{restaurant.rating}</span>
+                                    </Badge>
 
-                            <div className="delivery-type container d-flex justify-content-between mt-2">
-                                <span className="badge rounded-pill text-dark d-flex align-items-center">
-                                    <BsStarHalf className="star-icon" />&nbsp;
-                                    <span>{restaurant.rating}</span>
-                                </span>
+                                    <Badge bg="badge" text="dark" className="d-flex align-items-center me-2">
+                                        <BsStopwatch className="icon" />&nbsp;
+                                        30min - 50min
+                                    </Badge>
 
-                                <span className="badge rounded-pill text-dark d-flex align-items-center">
-                                    <BsStopwatch className="icon" />&nbsp;
-                                    30min - 50min
-                                </span>
-
-                                <span className="badge rounded-pill text-dark d-flex align-items-center">
-                                    <BsFillGeoFill className="gps-icon" />&nbsp;
-                                    2 km
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <Badge bg="badge" text="dark" className="d-flex align-items-center me-2">
+                                        <BsFillGeoFill className="gps-icon" />&nbsp;
+                                        2 km
+                                    </Badge>
+                                </Card.Text>
+                            </Col>
+                        </Row>
+                    </Card.Body>
+                </Card>
+            </Container>
         </>
     )
 }

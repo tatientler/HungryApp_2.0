@@ -24,7 +24,7 @@ export function RestaurantsCard(
 ) {
     return (
         <>
-            <Col sm={12} md={6} lg={4} className="mb-2 mt-1">
+            <Col sm={12} md={6} lg={4} className="mb-2 last-restaurant-card">
                 <Card border="light" className="restaurant-card" style={{ width: '100%' }}>
                     <Card.Body>
                         <Row>

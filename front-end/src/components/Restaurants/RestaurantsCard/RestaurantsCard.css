@@ -1,5 +1,5 @@
-body {
-    padding-bottom: 30px;
+.last-restaurant-card:last-child {
+    padding-bottom: 40px;
 }
 
 .img-logo {

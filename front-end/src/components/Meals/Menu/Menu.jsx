@@ -24,7 +24,7 @@ export function Menu({
                                 <img className="img-dish me-3 " src={dishAvatar} alt="Ilustração do prato" />
                             </Col>
 
-                            <Col xs={8} md={7} lg={8}>
+                            <Col xs={8} md={7} lg={7}>
                                 <Card.Title className="h2 text-overflow">
                                     {dishName}
                                 </Card.Title>
