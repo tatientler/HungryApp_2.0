@@ -9,19 +9,25 @@ import "./Footer.css"
 export function Footer() {
     return (
         <>
-            <Navbar bg="light" variant="light" fixed='bottom' >
-                <Container>
-                    <Nav className="me-auto">
-                        <Nav.Link className='d-flex align-items-center' href="/#"><AiOutlineHome className="icon" /></Nav.Link>
-                        <Nav.Link className='d-flex align-items-center' href="/#"><AiOutlineShoppingCart className="icon" /></Nav.Link>
-                        <Nav.Link className='d-flex align-items-center' href="/#"><BsPersonCircle className="icon" /></Nav.Link>
-                        <Nav.Link className='d-flex align-items-center' href="/#"><BsBoxArrowLeft className="icon" /></Nav.Link>
-                    </Nav>
+            <Navbar bg="light" variant="light" fixed='bottom' className='nav'>
+                <Container className='d-flex justify-content-evenly'>
+                    <Nav.Link className='d-flex align-items-center' href="/#">
+                        <AiOutlineHome className="icon" />
+                    </Nav.Link>
+
+                    <Nav.Link className='d-flex align-items-center' href="/#">
+                        <AiOutlineShoppingCart className="icon" />
+                    </Nav.Link>
+
+                    <Nav.Link className='d-flex align-items-center' href="/#">
+                        <BsPersonCircle className="icon" />
+                    </Nav.Link>
+
+                    <Nav.Link className='d-flex align-items-center' href="/#">
+                        <BsBoxArrowLeft className="icon" />
+                    </Nav.Link>
                 </Container>
             </Navbar>
         </>
     )
 }
-
-
-//nav classes: bg-light d-flex justify-content-evenly"
