@@ -16,8 +16,8 @@
 }
 
 .img-dish {
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
     border-radius: 10px;
 }
 
@@ -48,13 +48,26 @@
     width: 30px !important;
 }
 
-.add-btn button {
+.add-btn button, 
+.add-btn button:hover, 
+.add-btn button:active {
     background-color: #d93d86;
     border: 1px solid #d93d86;
-    border-radius: 0 0 6px 0;
+    border-radius: 8px 0 8px 0;
     height: 25px;
 }
 
 .bsPlusLg {
     color: #fefefe;
+}
+
+@media screen and (min-width: 940px) {
+    .img-dish {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    .restaurant-description {
+        font-size: 0.95rem;
+    }
 }

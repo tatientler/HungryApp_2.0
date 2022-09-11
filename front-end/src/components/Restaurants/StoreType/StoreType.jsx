@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 export function StoreType() {
     return (
         <>
-            <Container className='mb-2'>
+            <Container className='mb-4'>
                 <Row className='store d-flex justify-content-evenly'>
                     <Col xs md="4" lg="2" className='store d-flex justify-content-center select'>Restaurantes</Col>
                     <Col xs md="4" lg="2" className='store d-flex justify-content-center'>Mercados</Col>

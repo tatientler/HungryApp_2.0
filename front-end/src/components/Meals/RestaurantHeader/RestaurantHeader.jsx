@@ -22,16 +22,16 @@ export function RestaurantHeader({
     return (
         <>
             <Container>
-                <Card>
+                <Card border="light">
                     <Card.Img variant="top" src={restaurant.backgroundImage} className="img-restaurant d-flex justify-content-center" alt="Prato ilustrativo" />
                     <Card.Body className="restaurant-header">
                         <Row >
                             <Col xs={2} md={2} lg={3} className="d-flex align-self-center justify-content-center">
-                                <img className="img-logo" src={restaurant.avatar} alt="Logo do restaurante" />
+                                <img className="img-logo-restaurantHeader" src={restaurant.avatar} alt="Logo do restaurante" />
                             </Col>
 
                             <Col xs={10} md={10} lg={9} className='mb-2'>
-                                <Card.Title className="h2 text-overflow">
+                                <Card.Title className="h2-title text-overflow">
                                     <span>{restaurant.name}</span>&nbsp;
                                     <BsPatchCheckFill className="check-icon" />
                                 </Card.Title>

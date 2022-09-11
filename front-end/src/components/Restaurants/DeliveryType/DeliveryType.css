@@ -18,7 +18,7 @@
     background-color: #f1f1f1;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 940px) {
     .delivery-type {
         display: flex;
         justify-content: center;

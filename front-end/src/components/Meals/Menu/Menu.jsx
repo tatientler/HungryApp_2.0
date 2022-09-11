@@ -16,15 +16,15 @@ export function Menu({
 }) {
     return (
         <>
-            <Col sm={12} md={6} lg={4} className="mb-2 mt-1 meals-wrapper">
-                <Card  className="dish-card" style={{ width: '100%' }}>
-                    <Card.Body >
+            <Col sm={12} md={6} lg={6} className="mb-2 mt-1 meals-wrapper">
+                <Card border="light" className="dish-card" style={{ width: '100%' }}>
+                    <Card.Body>
                         <Row >
-                            <Col xs={3} md={4} lg={4} className="d-flex align-self-center justify-content-center">
-                                <img className="img-dish me-3 " src={dishAvatar} alt="Ilustração do prato" />
+                            <Col xs={3} md={4} lg={3} className="d-flex align-self-center justify-content-center">
+                                <img className="img-dish" src={dishAvatar} alt="Ilustração do prato" />
                             </Col>
 
-                            <Col xs={8} md={7} lg={7}>
+                            <Col xs={9} md={8} lg={9}>
                                 <Card.Title className="h2 text-overflow">
                                     {dishName}
                                 </Card.Title>

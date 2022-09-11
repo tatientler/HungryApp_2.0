@@ -1,12 +1,21 @@
 import { Restaurants } from '../components/Restaurants/Restaurants'
 
+import { PrivateRoute } from './PrivateRoute'
+
 export function RestaurantsList({
     id,
-    setRestaurant
+    setRestaurant,
+    search,
+    setSearch
 }) {
     return (
-        <>
-            <Restaurants id={id} setRestaurant={setRestaurant}/>
-        </>
+        <PrivateRoute>
+            <Restaurants 
+                id={id} 
+                setRestaurant={setRestaurant}
+                search={search}
+                setSearch={setSearch}
+                />
+        </PrivateRoute>
     )
 }

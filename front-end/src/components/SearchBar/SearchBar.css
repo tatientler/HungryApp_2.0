@@ -18,13 +18,16 @@
     border-radius: 0 10px 10px 0;
 }
 
-#filter-btn {
+#filter-btn, #delivery-btn {
     background-color: #fefefe;
     border: 2px solid rgb(245, 247, 251);
     border-radius: 10px;
     color: #646464;
 }
 
-.search-icon, .filter-icon {
+.search-icon, 
+.filter-icon, 
+.bike-icon, 
+.drop-icon {
     color: #d93d86;
 }

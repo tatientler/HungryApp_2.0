@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-import { RestaurantsCard } from "./RestaurantsCard/RestaurantsCard";
 
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 
 import './Restaurants.css'
 import { NavbarMain } from "./NavbarMain/NavbarMain";
@@ -11,19 +9,24 @@ import { StoreType } from "./StoreType/StoreType";
 import { DeliveryType } from "./DeliveryType";
 import { Footer } from "../Footer/Footer";
 import { useNavigate } from "react-router";
-import { CarouselComponent } from "./Carousel/Carousel";
+import { Marketing } from "./Marketing/Marketing";
+import { TesteBuscador } from "../TesteBuscador/TesteBuscador";
+
 
 export function Restaurants({
-    setRestaurant
+    setRestaurant,
+    search,
+    setSearch
 }) {
     const [restaurants, setRestaurants] = useState([])
-    const [search, setSearch] = useState('')
+   
     const navigate = useNavigate()
 
     useEffect(() => {
         getRestaurants()
+        console.log(restaurants)
     }, [])
-
+  
     async function getRestaurants() {
         await fetch(`http://localhost:3000/restaurants/all`, {
             method: 'GET',
@@ -32,7 +35,10 @@ export function Restaurants({
             }
         })
             .then(response => response.json())
-            .then(data => { setRestaurants(data) })
+            .then(data => {
+                setRestaurants(data)
+                console.log(restaurants)
+            })
     }
 
     async function getRestaurant(id) {
@@ -50,26 +56,16 @@ export function Restaurants({
     return (
         <>
             <NavbarMain />
-            <CarouselComponent restaurants={restaurants} />
-            <SearchBar busca={search} setBusca={setSearch} />
+            <Marketing />
+            <SearchBar search={search} setSearch={setSearch} />
             <StoreType />
             <DeliveryType />
 
             <Container>
-                <Row>
-                    {
-                        restaurants.map((restaurant) =>
-                            <RestaurantsCard
-                                key={restaurant._id}
-                                id={restaurant._id}
-                                restaurantName={restaurant.name}
-                                restaurantAvatar={restaurant.avatar}
-                                restaurantRating={restaurant.rating}
-                                getRestaurant={getRestaurant}
-                            />
-                        )
-                    }
-                </Row>
+                <TesteBuscador
+                    restaurants={restaurants}
+                    getRestaurant={getRestaurant}
+                    search={search} />
             </Container>
 
             <Footer />

@@ -12,7 +12,7 @@ class UserController {
         })
     }
 
-    static getUserById = async(req, res) => {
+    static getUserById = async (req, res) => {
         try {
             const userFound = await users.findById(req.params.id)
             if (userFound) {
@@ -26,18 +26,19 @@ class UserController {
             })
         }
     }
-    
+
     static createUser = async (req, res) => {
+        
         const hashedPassword = bcrypt.hashSync(req.body.password, 10) //password é a chave que vem no body...
         req.body.password = hashedPassword
         const newUser = new users(req.body)
-    
+
         try {
             const savedUser = await newUser.save()
             res.status(200).send({
                 "message": "Usuário adicionado com sucesso", savedUser
-        })
-    
+            })
+
         } catch (erro) {
             res.status(500).send({
                 message: erro
@@ -49,7 +50,7 @@ class UserController {
         try {
             const userFound = await users.findById(req.params.id)
 
-            if(userFound) {
+            if (userFound) {
                 userFound.name = req.body.name || userFound.name
                 userFound.email = req.body.email || userFound.email
             }

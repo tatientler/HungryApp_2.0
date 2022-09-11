@@ -14,7 +14,7 @@ import Row from 'react-bootstrap/Row';
 import './RestaurantsCard.css'
 
 export function RestaurantsCard(
-    {
+    {  
         id,
         restaurantName,
         restaurantAvatar,

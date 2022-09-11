@@ -6,3 +6,7 @@ p {
 #main {
     padding-bottom: 30px;
 }
+
+.hide {
+    display: none !important;
+}

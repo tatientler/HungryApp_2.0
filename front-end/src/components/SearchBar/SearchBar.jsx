@@ -1,7 +1,6 @@
-import { useState } from "react";
-
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineDown } from "react-icons/ai";
 import { BsFilterRight } from "react-icons/bs";
+import { RiEBikeLine } from "react-icons/ri";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -12,39 +11,43 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 import './SearchBar.css'
 
-export function SearchBar() {
-    const [value, setValue] = useState('')
-
+export function SearchBar({
+    search,
+    setSearch
+}) {
     return (
-        <>
+        <Container className="mb-4 mt-4">
+            <Row className="d-flex justify-content-between">
+                <Col xs={5} md={7} lg={8}>
+                    <InputGroup className="d-flex align-items-center justify-content-center search">
+                        <Form.Control
+                            className="search-bar"
+                            type="text"
+                            name="Search"
+                            id="search"
+                            value={search}
+                            onChange={(event) => setSearch(event.target.value)}
+                            placeholder="Pesquisar"
+                        />
 
-            <Container className="mb-2 mt-2">
-                <Row className="d-flex justify-content-between">
-                    <Col xs={8} md={8} lg={8}>
-                        <InputGroup className="d-flex align-items-center justify-content-center search">
-                            <Form.Control
-                                className="search-bar"
-                                type="search"
-                                name="Search"
-                                id="search"
-                                //value={value}
-                                //onChange={(e) => setValue(e.target.value)}
-                                placeholder="Pesquisar"
-                            />
-
-                            <Button id="search-btn">
-                                <AiOutlineSearch className="search-icon" />
-                            </Button>
-                        </InputGroup>
-                    </Col>
-
-                    <Col xs={4} md={4} lg={4} className="d-flex justify-content-end">
-                        <Button id="filter-btn" className="d-flex align-items-center">
-                            <BsFilterRight className="filter-icon" />&nbsp;Filtros
+                        <Button id="search-btn">
+                            <AiOutlineSearch className="search-icon" />
                         </Button>
-                    </Col>
-                </Row>
-            </Container>
-        </>
+                    </InputGroup>
+                </Col>
+
+                <Col xs={3} md={2} lg={1} className="d-flex justify-content-center p-0">
+                    <Button id="filter-btn" className="d-flex align-items-center">
+                        <BsFilterRight className="filter-icon" />&nbsp;Filtros
+                    </Button>
+                </Col>
+
+                <Col xs={4} md={3} lg={2} className="d-flex justify-content-center p-0">
+                    <Button id="delivery-btn" className="d-flex align-items-center">
+                        <RiEBikeLine className="bike-icon" />&nbsp;Entregas&nbsp;<AiOutlineDown className="drop-icon" />
+                    </Button>
+                </Col>
+            </Row>
+        </Container>
     )
 }
