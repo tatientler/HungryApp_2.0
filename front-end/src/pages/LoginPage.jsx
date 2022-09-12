@@ -1,6 +1,6 @@
 import { LoginWrapper } from "../components/Login/LoginWrapper";
 
-export function Login() {
+export function LoginPage() {
     return (
         <>
             <LoginWrapper />

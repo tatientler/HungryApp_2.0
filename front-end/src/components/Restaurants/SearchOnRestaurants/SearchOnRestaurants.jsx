@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import Row from 'react-bootstrap/Row';
-import { RestaurantsCard } from "../Restaurants/RestaurantsCard"
+import { RestaurantsCard } from "../RestaurantsCard/RestaurantsCard"
 
-export function TesteBuscador({
+export function SearchOnRestaurants({
     restaurants,
     getRestaurant,
     search

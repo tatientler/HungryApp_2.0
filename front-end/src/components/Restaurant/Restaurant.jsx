@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react"
 
-import { NavbarRestaurant } from "../NavbarRestaurant/NavbarRestaurant";
+import { NavbarRestaurant } from "./NavbarRestaurant/NavbarRestaurant";
 import { RestaurantHeader } from "./RestaurantHeader/RestaurantHeader"
 import { SearchBar } from "../SearchBar/SearchBar";
 import { Footer } from "../Footer/Footer"
-import { Menu } from './Menu/Menu'
+import { DishCard } from './DishCard/DishCard'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-export function Meals({
+export function Restaurant({
     restaurant,
     search,
     setSearch
@@ -38,7 +38,7 @@ export function Meals({
                 <Row>
                     {
                         newList1.map((menu) =>
-                            <Menu
+                            <DishCard
                                 key={menu._id}
                                 id={menu._id}
                                 dishAvatar={menu.avatar}

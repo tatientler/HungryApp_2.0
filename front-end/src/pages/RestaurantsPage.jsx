@@ -2,7 +2,7 @@ import { Restaurants } from '../components/Restaurants/Restaurants'
 
 import { PrivateRoute } from './PrivateRoute'
 
-export function RestaurantsList({
+export function RestaurantsPage({
     id,
     setRestaurant,
     search,

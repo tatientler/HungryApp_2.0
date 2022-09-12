@@ -6,20 +6,23 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import Logo from './img/Logo.png'
 
-import './NavbarMain.css'
+import './NavbarMainRestaurants.css'
 
-export function NavbarMain() {
+export function NavbarMainRestaurants() {
     return (
         <>
-            <Navbar expand="lg">
+            <Navbar expand="lg" className="navbar-main">
                 <Container>
-                    <Navbar.Brand href="#home"><img className="navbar-logo" src={Logo} alt="Logo Hungry" /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Brand href="#home">
+                        <img className="navbar-logo" src={Logo} alt="Logo Hungry" />
+                    </Navbar.Brand>
+
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Compras</Nav.Link>
-                            <Nav.Link href="#link">Usuário</Nav.Link>
+                            <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
+                            <Nav.Link href="#link" className="nav-link">Compras</Nav.Link>
+                            <Nav.Link href="#link" className="nav-link">Usuário</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
 

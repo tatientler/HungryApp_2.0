@@ -1,0 +1,31 @@
+.badge-filter {
+    overflow: auto;
+}
+
+.badge-filter::-webkit-scrollbar {
+    display: none;
+}
+
+.shopping-icon, 
+.card-icon, 
+.location-icon {
+    color: #d93d86;
+}
+
+.dollar-icon, 
+.check-icon {
+    color: #08da08;
+}
+
+.badge {
+    background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 640px) {
+    .badge-filter {
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        justify-content: center;
+    }
+}

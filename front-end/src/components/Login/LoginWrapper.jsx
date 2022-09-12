@@ -9,7 +9,7 @@ export function LoginWrapper() {
         <>
             <div className='bg-img'>
                 <Container fluid className="login-wrapper p-5">
-                    <h1 className="h1 mb-4">Falta pouco para matar a sua fome!</h1>
+                    <h1 className="login-h1 mb-4">Falta pouco para matar a sua fome!</h1>
                     <div className="login d-flex flex-column">
 
                         <LoginForm />

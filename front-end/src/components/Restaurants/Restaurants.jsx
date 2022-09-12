@@ -2,15 +2,14 @@ import { useState, useEffect } from "react";
 
 import Container from 'react-bootstrap/Container';
 
-import './Restaurants.css'
-import { NavbarMain } from "./NavbarMain/NavbarMain";
+import { NavbarMainRestaurants } from "./NavbarMainRestaurants/NavbarMainRestaurants";
 import { SearchBar } from "../SearchBar/SearchBar";
 import { StoreType } from "./StoreType/StoreType";
-import { DeliveryType } from "./DeliveryType";
+import { BadgeFilter } from "./BadgeFilter/BadgeFilter";
 import { Footer } from "../Footer/Footer";
 import { useNavigate } from "react-router";
 import { Marketing } from "./Marketing/Marketing";
-import { TesteBuscador } from "../TesteBuscador/TesteBuscador";
+import { SearchOnRestaurants } from "./SearchOnRestaurants/SearchOnRestaurants";
 
 
 export function Restaurants({
@@ -55,14 +54,14 @@ export function Restaurants({
 
     return (
         <>
-            <NavbarMain />
+            <NavbarMainRestaurants />
             <Marketing />
             <SearchBar search={search} setSearch={setSearch} />
             <StoreType />
-            <DeliveryType />
+            <BadgeFilter />
 
             <Container>
-                <TesteBuscador
+                <SearchOnRestaurants
                     restaurants={restaurants}
                     getRestaurant={getRestaurant}
                     search={search} />

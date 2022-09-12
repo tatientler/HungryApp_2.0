@@ -12,19 +12,19 @@ export function Footer() {
             <Navbar bg="light" variant="light" fixed='bottom' className='nav'>
                 <Container className='d-flex justify-content-evenly'>
                     <Nav.Link className='d-flex align-items-center' href="/#">
-                        <AiOutlineHome className="icon" />
+                        <AiOutlineHome className="home-icon" />
                     </Nav.Link>
 
                     <Nav.Link className='d-flex align-items-center' href="/#">
-                        <AiOutlineShoppingCart className="icon" />
+                        <AiOutlineShoppingCart className="car-shopping-icon" />
                     </Nav.Link>
 
                     <Nav.Link className='d-flex align-items-center' href="/#">
-                        <BsPersonCircle className="icon" />
+                        <BsPersonCircle className="profile-icon" />
                     </Nav.Link>
 
                     <Nav.Link className='d-flex align-items-center' href="/#">
-                        <BsBoxArrowLeft className="icon" />
+                        <BsBoxArrowLeft className="logout-icon" />
                     </Nav.Link>
                 </Container>
             </Navbar>

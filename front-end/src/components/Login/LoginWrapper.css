@@ -7,19 +7,19 @@
 .login-wrapper {
     background-color: #fefefe;
     border-radius: 25px;
-    opacity: 0.95;
-    margin:auto;
     height: 300px;
-    width: 400px;
+    margin:auto;
     max-width:400px;
     min-height:550px;
+    opacity: 0.95;
     position:absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 400px; 
 }
 
-.h1 {
+.login-h1 {
     color: #4f4f4f;
     font-size: 2.3rem !important;
     text-align: center;

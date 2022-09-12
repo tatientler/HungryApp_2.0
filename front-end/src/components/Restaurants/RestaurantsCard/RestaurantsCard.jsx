@@ -29,22 +29,22 @@ export function RestaurantsCard(
                     <Card.Body>
                         <Row>
                             <Col xs={2} md={3} lg={4} className="d-flex align-self-center justify-content-center">
-                                <img className="img-logo" src={restaurantAvatar} alt="Logo do restaurante" />
+                                <img className="restaurant-card-img" src={restaurantAvatar} alt="Logo do restaurante" />
                             </Col>
                         
                             <Col xs={8} md={7} lg={6}>
-                                <Card.Title className="h2 text-overflow" onClick={() => getRestaurant(id)}>
+                                <Card.Title className="restaurant-card-h2 text-overflow" onClick={() => getRestaurant(id)}>
                                     {restaurantName} &nbsp;
                                     <BsPatchCheckFill className="check-icon" />
                                 </Card.Title>
 
-                                <Card.Text className="restaurant-description d-flex align-items-center">
+                                <Card.Text className="restaurant-card-description d-flex align-items-center">
                                     <BsStarHalf className="star-icon" />&nbsp;
                                     <span> {restaurantRating}</span>&nbsp;|&nbsp;
 
                                     <span>R$ 5,60</span>
                                 </Card.Text>
-                                <Card.Text className="restaurant-description d-flex align-items-center">
+                                <Card.Text className="restaurant-card-description d-flex align-items-center">
                                     <BsStopwatch className="icon" />&nbsp;
                                     <span>30min - 50min |&nbsp;</span>
 

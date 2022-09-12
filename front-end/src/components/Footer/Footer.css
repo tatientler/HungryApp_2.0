@@ -1,4 +1,11 @@
-.icon {
+.nav {
+    padding: 0 !important;
+}
+
+.home-icon, 
+.car-shopping-icon, 
+.profile-icon, 
+.logout-icon {
     color: #d93d86;
 }
 

@@ -2,9 +2,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react';
 
-import { Login } from './pages/Login'
-import { RestaurantsList } from './pages/RestaurantsList'
-import { Meals } from './components/Meals/Meals';
+import { LoginPage } from './pages/LoginPage'
+import { RestaurantsPage } from './pages/RestaurantsPage'
+import { RestaurantPage } from './pages/RestaurantPage';
 
 
 export function App() {
@@ -14,17 +14,17 @@ export function App() {
     return (
         <>
             <Routes>
-                <Route path='/' element={<Login />} />
+                <Route path='/' element={<LoginPage />} />
                 <Route
                     path='/restaurantes'
-                    element={<RestaurantsList
+                    element={<RestaurantsPage
                         setRestaurant={setRestaurant}
                         search={search}
                         setSearch={setSearch}
                     />} />
                 <Route
                     path='restaurante/:id'
-                    element={<Meals
+                    element={<RestaurantPage
                         restaurant={restaurant}
                         search={search}
                         setSearch={setSearch}

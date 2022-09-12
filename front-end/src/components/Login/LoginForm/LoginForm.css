@@ -14,11 +14,12 @@
     border: #d93d86;
     border-radius: 50px;
     color: #fefefe;
-    width: 100%;
     margin-bottom: 10px;
+    width: 100%;
 }
 
-#btn-enter:hover, #btn-enter:active {
+#btn-enter:hover, 
+#btn-enter:active {
     background-color: #d93d86;
     color: #fefefe;
     font-weight: bold;

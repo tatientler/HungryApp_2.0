@@ -1,4 +1,4 @@
-.meals-wrapper:last-child {
+.dish-card-wrapper:last-child {
     padding-bottom: 40px;
 }
 
@@ -7,44 +7,40 @@
     position: relative;
 }
 
-.dish-card:hover {
-    transform: scale(1.05);
-    transition: .5s linear;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.616);
-    background-color: #f0f0f0c0;
-}
-
-.img-dish {
+.dish-card-img {
+    border-radius: 10px;
     height: 6rem;
     width: 6rem;
-    border-radius: 10px;
 }
 
-.h2 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.dish-card-h2 {
+    color: #414141;
+    font-size: 16px !important;
     overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;  
 }
 
-.restaurant-description {
+.dish-card-restaurant_description {
+    color: #8c8c8c;
+    display: -webkit-box;
     font-size: 0.8rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
     -webkit-line-clamp: 2; /* number of lines to show */
            line-clamp: 2; 
     -webkit-box-orient: vertical;
+    
 }
 
-.price-description {
+.dish-card-price {
     color: #414141;
 }
 
 .add-btn {
+    bottom: -1px;
     position: absolute;
     right: 22.8px;
-    bottom: -1px;
     width: 30px !important;
 }
 
@@ -62,12 +58,20 @@
 }
 
 @media screen and (min-width: 940px) {
-    .img-dish {
+    .dish-card-img {
         height: 7rem;
         width: 7rem;
     }
 
-    .restaurant-description {
+    .dish-card-restaurant_description {
         font-size: 0.95rem;
+    }
+
+    .dish-card:hover {
+        background-color: #f0f0f0c0;
+        border-radius: 8px;
+        box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.616);
+        transform: scale(1.05);
+        transition: .5s linear;
     }
 }

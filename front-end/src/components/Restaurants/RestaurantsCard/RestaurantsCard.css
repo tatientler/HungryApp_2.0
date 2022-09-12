@@ -2,19 +2,20 @@
     padding-bottom: 40px;
 }
 
-.img-logo {
+.restaurant-card-img {
+    border-radius: 100px;
     height: 53px;
     width: 53px;
-    border-radius: 100px;
 }
 
-.h2 {
-    font-size: 16px !important;
+.restaurant-card-h2 {
     cursor: pointer;
+    font-size: 16px !important;
 }
 
-.restaurant-description {
-    font-size: 0.7rem;
+.restaurant-card-description {
+    color: #8c8c8c;
+    font-size: 0.75rem;
     margin-bottom: 0;
 }
 
@@ -35,16 +36,16 @@
 }
 
 @media screen and (min-width: 940px) {
-    .img-logo {
+    .restaurant-card-img {
         height: 70px !important;
         width: 70px !important;
     }
 
     .restaurant-card:hover {
-        transition: .5s linear;
-        transform: scale(1.05);
-        box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.616);
-        border-radius: 10px;
         background-color: #f0f0f0c0;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(109, 109, 109, 0.616);
+        transform: scale(1.05);
+        transition: .5s linear;
     }
 }

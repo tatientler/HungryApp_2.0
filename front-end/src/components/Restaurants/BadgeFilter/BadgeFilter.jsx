@@ -9,13 +9,13 @@ import { AiOutlineEnvironment } from "react-icons/ai";
 import Badge from 'react-bootstrap/Badge';
 import Container from 'react-bootstrap/Container';
 
-import './DeliveryType.css'
+import './BadgeFilter.css'
 
-export function DeliveryType() {
+export function BadgeFilter() {
     return (
-        <Container className="delivery-type d-flex mb-4">
+        <Container className="badge-filter d-flex mb-4">
             <Badge bg="badge" text="dark" className="p-2 ps-3 pe-3 me-3">
-                <BsShop className="icon" />&nbsp;
+                <BsShop className="shopping-icon" />&nbsp;
                 Para retirar
             </Badge>
 
@@ -25,12 +25,12 @@ export function DeliveryType() {
             </Badge>
 
             <Badge bg="badge" text="dark" className="p-2 ps-3 pe-3 me-3">
-                <BsCreditCard className="icon" />&nbsp;
+                <BsCreditCard className="card-icon" />&nbsp;
                 Vale-refeição
             </Badge>
 
             <Badge bg="badge" text="dark" className="p-2 ps-3 pe-3 me-3">
-                <AiOutlineEnvironment className="icon" />&nbsp;
+                <AiOutlineEnvironment className="location-icon" />&nbsp;
                 Distância
             </Badge>
 

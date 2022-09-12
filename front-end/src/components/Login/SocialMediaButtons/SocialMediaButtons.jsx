@@ -12,6 +12,7 @@ export function SocialMediaButtons() {
                 <Button className='d-flex align-items-center btn-social-media' variant="outline-dark">
                     <img className="facebook me-2" src={FacebookLogo} alt="Facebook" /> Facebook
                 </Button>
+                
                 <Button className='d-flex align-items-center btn-social-media' variant="outline-dark">
                     <img className="google me-2" src={GoogleLogo} alt="Google" /> Google
                 </Button>

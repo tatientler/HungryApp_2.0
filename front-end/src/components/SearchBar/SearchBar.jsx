@@ -16,7 +16,7 @@ export function SearchBar({
     setSearch
 }) {
     return (
-        <Container className="mb-4 mt-4">
+        <Container className="mb-4 mt-4 searchbar-container">
             <Row className="d-flex justify-content-between">
                 <Col xs={5} md={7} lg={8}>
                     <InputGroup className="d-flex align-items-center justify-content-center search">
