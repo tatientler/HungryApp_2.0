@@ -14,7 +14,7 @@ import Row from 'react-bootstrap/Row';
 import './RestaurantCard.css'
 
 export function RestaurantCard(
-    {  
+    {
         id,
         restaurantName,
         restaurantAvatar,
@@ -31,12 +31,16 @@ export function RestaurantCard(
                             <Col xs={2} md={3} lg={4} className="d-flex align-self-center justify-content-center">
                                 <img className="restaurant-card-img" src={restaurantAvatar} alt="Logo do restaurante" />
                             </Col>
-                        
+
                             <Col xs={8} md={7} lg={6}>
-                                <Card.Title className="restaurant-card-h2 text-overflow" onClick={() => getRestaurant(id)}>
-                                    {restaurantName} &nbsp;
-                                    <BsPatchCheckFill className="check-icon" />
-                                </Card.Title>
+                                <Row className="restaurant-card-row_title">
+                                    <Card.Title className="restaurant-card-h2" onClick={() => getRestaurant(id)}>
+                                        {restaurantName}&nbsp;
+                                    </Card.Title>
+                                    <div className="restaurant-card-icon">
+                                        <BsPatchCheckFill className="check-icon" />
+                                    </div>
+                                </Row>
 
                                 <Card.Text className="restaurant-card-description d-flex align-items-center">
                                     <BsStarHalf className="star-icon" />&nbsp;
@@ -52,7 +56,7 @@ export function RestaurantCard(
                                     <span> 2km</span>
                                 </Card.Text>
                             </Col>
-                        
+
                             <Col xs={2} md={2} lg={2} className="d-flex align-self-center justify-content-center">
                                 <LikeButton />
                             </Col>

@@ -28,7 +28,6 @@ class UserController {
     }
 
     static createUser = async (req, res) => {
-        
         const hashedPassword = bcrypt.hashSync(req.body.password, 10) //password é a chave que vem no body...
         req.body.password = hashedPassword
         const newUser = new users(req.body)

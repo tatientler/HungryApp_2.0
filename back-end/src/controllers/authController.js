@@ -11,7 +11,7 @@ class AuthController {
             userSchema.findOne({ email: req.body.email }, (error, user) => {
                 if (!user) {
                     return res.status(401).send({
-                        message: "Usuário não encontrado",
+                        message: "Login não autorizado",
                         email: `${req.body.email}`
                     })
                 }
@@ -32,7 +32,7 @@ class AuthController {
                     userID
                 })
             })
-            
+
         } catch (erro) {
             console.log(erro)
         }

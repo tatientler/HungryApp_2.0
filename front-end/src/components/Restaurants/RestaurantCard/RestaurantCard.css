@@ -8,9 +8,23 @@
     width: 53px;
 }
 
+.restaurant-card-row_title {
+    display: flex;
+    flex-wrap: nowrap !important;
+}
+
 .restaurant-card-h2 {
     cursor: pointer;
     font-size: 16px !important;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    width: 80% !important;
+}
+
+.restaurant-card-icon {
+    padding: 0;
+    width: 20px !important;
 }
 
 .restaurant-card-description {
