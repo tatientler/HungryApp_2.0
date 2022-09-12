@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import Row from 'react-bootstrap/Row';
-import { RestaurantsCard } from "../RestaurantsCard/RestaurantsCard"
+import { RestaurantCard } from "../RestaurantCard/RestaurantCard"
 
-export function SearchOnRestaurants({
+export function RestaurantList({
     restaurants,
     getRestaurant,
     search
@@ -23,7 +23,7 @@ export function SearchOnRestaurants({
             <Row>
                 {
                     newList.map((restaurant) =>
-                        <RestaurantsCard
+                        <RestaurantCard
                             key={restaurant._id}
                             id={restaurant._id}
                             restaurantName={restaurant.name}

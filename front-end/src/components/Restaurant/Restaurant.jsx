@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { NavbarRestaurant } from "./NavbarRestaurant/NavbarRestaurant";
 import { RestaurantHeader } from "./RestaurantHeader/RestaurantHeader"
 import { SearchBar } from "../SearchBar/SearchBar";
-import { Footer } from "../Footer/Footer"
+import { MenuMobile } from "../MenuMobile/MenuMobile"
 import { DishCard } from './DishCard/DishCard'
 
 import Container from 'react-bootstrap/Container';
@@ -51,7 +51,7 @@ export function Restaurant({
                 </Row>
             </Container>
 
-            <Footer />
+            <MenuMobile />
         </>
     )
 }

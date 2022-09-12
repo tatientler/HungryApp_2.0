@@ -4,9 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import { AiOutlineHome, AiOutlineShoppingCart } from "react-icons/ai";
 import { BsPersonCircle, BsBoxArrowLeft } from "react-icons/bs";
 
-import "./Footer.css"
+import "./MenuMobile.css"
 
-export function Footer() {
+export function MenuMobile() {
     return (
         <>
             <Navbar bg="light" variant="light" fixed='bottom' className='nav'>

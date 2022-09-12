@@ -7,9 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import Logo from './img/Logo.png'
 
-import './NavbarMainRestaurants.css'
+import './NavbarRestaurants.css'
 
-export function NavbarMainRestaurants() {
+export function NavbarRestaurants() {
     return (
         <>
             <Navbar expand="lg" className="navbar-main">

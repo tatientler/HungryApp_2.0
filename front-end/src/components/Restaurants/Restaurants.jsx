@@ -2,14 +2,14 @@ import { useState, useEffect } from "react";
 
 import Container from 'react-bootstrap/Container';
 
-import { NavbarMainRestaurants } from "./NavbarMainRestaurants/NavbarMainRestaurants";
+import { NavbarRestaurants } from "./NavbarRestaurants/NavbarRestaurants";
 import { SearchBar } from "../SearchBar/SearchBar";
 import { StoreType } from "./StoreType/StoreType";
 import { BadgeFilter } from "./BadgeFilter/BadgeFilter";
-import { Footer } from "../Footer/Footer";
+import { MenuMobile } from "../MenuMobile/MenuMobile";
 import { useNavigate } from "react-router";
 import { Marketing } from "./Marketing/Marketing";
-import { SearchOnRestaurants } from "./SearchOnRestaurants/SearchOnRestaurants";
+import { RestaurantList } from "./RestaurantList/RestaurantList";
 
 
 export function Restaurants({
@@ -54,20 +54,20 @@ export function Restaurants({
 
     return (
         <>
-            <NavbarMainRestaurants />
+            <NavbarRestaurants />
             <Marketing />
             <SearchBar search={search} setSearch={setSearch} />
             <StoreType />
             <BadgeFilter />
 
             <Container>
-                <SearchOnRestaurants
+                <RestaurantList
                     restaurants={restaurants}
                     getRestaurant={getRestaurant}
                     search={search} />
             </Container>
 
-            <Footer />
+            <MenuMobile />
         </>
     )
 }
