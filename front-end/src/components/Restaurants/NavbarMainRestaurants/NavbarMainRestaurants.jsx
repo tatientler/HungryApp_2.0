@@ -1,4 +1,5 @@
 import { AiOutlineEnvironment, AiOutlineDown } from "react-icons/ai";
+import { BsBoxArrowLeft } from "react-icons/bs";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -34,6 +35,10 @@ export function NavbarMainRestaurants() {
                             <AiOutlineDown />
                         </p>
                     </div>
+
+                    <Nav.Link href="/#" className="nav-link desktop ms-5">
+                        <BsBoxArrowLeft className="logout-icon" />
+                    </Nav.Link>
                 </Container>
             </Navbar>      
         </>

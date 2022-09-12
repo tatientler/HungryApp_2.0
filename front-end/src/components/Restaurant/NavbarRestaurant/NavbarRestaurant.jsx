@@ -1,4 +1,5 @@
 import { AiOutlineDoubleLeft } from "react-icons/ai";
+import { BsBoxArrowLeft } from "react-icons/bs";
 import { useNavigate } from "react-router";
 
 import Container from 'react-bootstrap/Container';
@@ -23,6 +24,10 @@ export function NavbarRestaurant() {
                     <Navbar.Brand href="/#" className="div-img">
                         <img src={require('./img/Logo.png')} className="logo" alt="Hungry" />
                     </Navbar.Brand>
+
+                    <Nav.Link href="/#" className="nav-link desktop ms-5">
+                        <BsBoxArrowLeft className="logout-icon" />
+                    </Nav.Link>
                 </Container>
             </Navbar>
         </>

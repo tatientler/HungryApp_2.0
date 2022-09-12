@@ -4,7 +4,8 @@
     padding-top: 0 !important;
 }
 
-#back-btn {
+#back-btn, 
+.logout-icon {
     color: #d93d86;
 }
 
@@ -16,8 +17,16 @@
     margin-right: 0 !important;
 }
 
+.desktop {
+    display: none !important;
+}
+
 @media screen and (min-width: 940px) {
     .logo {
         width: 45px;
+    }
+
+    .desktop {
+        display: block !important;
     }
 }
