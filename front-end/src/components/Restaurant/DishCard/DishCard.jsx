@@ -18,7 +18,7 @@ export function DishCard({
         <>
             <Col sm={12} md={6} lg={6} className="mb-2 mt-1 dish-card-wrapper">
                 <Card border="light" className="dish-card" style={{ width: '100%' }}>
-                    <Card.Body>
+                    <Card.Body className="dish-card-body">
                         <Row >
                             <Col xs={3} md={4} lg={3} className="d-flex align-self-center justify-content-center">
                                 <img className="dish-card-img" src={dishAvatar} alt="Ilustração do prato" />

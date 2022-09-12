@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.dish-card-body {
+    padding: 10px 20px !important;
+}
+
 .dish-card-img {
     border-radius: 10px;
     height: 6rem;
