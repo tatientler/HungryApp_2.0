@@ -1,5 +1,3 @@
-
-
 import { Formik } from "formik"
 import {
     SubmitButton,
@@ -7,11 +5,9 @@ import {
     Form,
     FormItem
 } from "formik-antd"
-import {  message, Row } from "antd"
+import { Row } from "antd"
 
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
-
-
 import { notification } from 'antd';
 
 import { useState } from "react";
@@ -40,7 +36,7 @@ export function LoginForm() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
         }
- 
+
         try {
             const response = await fetch('http://localhost:3000/users/login', options)
             if (response.status === 200) {
@@ -61,7 +57,7 @@ export function LoginForm() {
     }
 
     function validateRequired(value) {
-        return value ? undefined : "Obrigatório"
+        return value ? undefined : "*Obrigatório"
     }
 
     return (
@@ -77,19 +73,19 @@ export function LoginForm() {
                     actions.resetForm()
                 }}
                 render={() => (
-                    <Form>
+                    <Form className="mb-3 mt-3">
                         <Row gutter={[8, 8]}>
                             <FormItem
                                 name={'email'}
                                 required={true}
                                 validate={validateRequired}
-                                style={{width: '100%'}}
+                                style={{ width: '100%' }}
                             >
                                 <Input
                                     name={'email'}
                                     type={'email'}
                                     placeholder='Digite seu e-mail'
-                                    
+
                                 />
                             </FormItem>
                         </Row>
@@ -99,7 +95,7 @@ export function LoginForm() {
                                 name={'password'}
                                 required={true}
                                 validate={validateRequired}
-                                style={{width: '100%'}}
+                                style={{ width: '100%' }}
                             >
                                 <Input.Password
                                     name={'password'}
@@ -109,59 +105,16 @@ export function LoginForm() {
                             </FormItem>
                         </Row>
 
-                        <SubmitButton>
-                            Salvar
+                        <SubmitButton id="btn-enter" className="mt-3">
+                            Entrar
                         </SubmitButton>
 
+                        <a className="forgot-password" href="/#">
+                            <p>Esqueci minha senha</p>
+                        </a>
                     </Form>
                 )}
             />
         </>
     )
 }
-
-/*
-import {
-    AiFillEyeInvisible,
-    AiFillEye
-} from "react-icons/ai";
-
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-
-<Form>
-                <Form.Group className="mb-3 mt-2" >
-                    <Form.Control type="email" id="userEmail" placeholder="Digite seu e-mail" required />
-                </Form.Group>
-
-                <Form.Group className="mb-3 d-flex">
-                    <InputGroup>
-                        <Form.Control
-                            type={showPassword ? "text" : "password"} id="userPassword" placeholder="Senha"
-                            aria-label="Input group example"
-                            aria-describedby="btnGroupAddon2"
-                            required
-                        />
-                        
-                        <InputGroup.Text
-                            id="btnGroupAddon2"
-                            className="input-group-text"
-                            onClick={togglePassword}>{showPassword ? <AiFillEye /> : <AiFillEyeInvisible />}
-                        </InputGroup.Text>
-                    </InputGroup>
-                </Form.Group>
-
-                <Form.Group className="checkbox" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Lembrar-me" />
-                </Form.Group>
-
-                <a className="forgot-password" href="/#">
-                    <p>Esqueci minha senha</p>
-                </a>
-
-                <Button id="btn-enter" href='/#' onClick={handleLogin}>
-                    Entrar
-                </Button>
-            </Form>
-*/
