@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react"
-
-import { NavbarRestaurant } from "./NavbarRestaurant/NavbarRestaurant";
-import { RestaurantHeader } from "./RestaurantHeader/RestaurantHeader"
-import { SearchBar } from "../SearchBar/SearchBar";
-import { MenuMobile } from "../MenuMobile/MenuMobile"
-import { DishCard } from './DishCard/DishCard'
+import { useState, useEffect } from "react";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+
+import { NavbarRestaurant } from "./NavbarRestaurant/NavbarRestaurant";
+import { RestaurantHeader } from "./RestaurantHeader/RestaurantHeader";
+import { SearchBar } from "../SearchBar/SearchBar";
+import { MenuMobile } from "../MenuMobile/MenuMobile";
+import { DishCard } from './DishCard/DishCard';
 
 export function Restaurant({
     restaurant,

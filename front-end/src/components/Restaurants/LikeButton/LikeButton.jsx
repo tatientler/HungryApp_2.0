@@ -1,15 +1,15 @@
-import {
-    BsHeart,
-    BsHeartFill
-} from "react-icons/bs";
+import { useState } from "react";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { useState } from "react";
+import {
+    BsHeart,
+    BsHeartFill
+} from "react-icons/bs";
 
-import './LikeButton.css'
+import './LikeButton.css';
 
 export function LikeButton() {
     const [isClicked, setIsClicked] = useState(false)

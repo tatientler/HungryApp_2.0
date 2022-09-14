@@ -1,5 +1,6 @@
-import { Restaurant } from '../components/Restaurant/Restaurant'
 import { PrivateRoute } from './PrivateRoute'
+
+import { Restaurant } from '../components/Restaurant/Restaurant'
 
 export function RestaurantPage({
     restaurant,

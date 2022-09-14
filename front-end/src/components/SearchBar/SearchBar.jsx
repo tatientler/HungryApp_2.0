@@ -1,7 +1,3 @@
-import { AiOutlineSearch, AiOutlineDown } from "react-icons/ai";
-import { BsFilterRight } from "react-icons/bs";
-import { RiEBikeLine } from "react-icons/ri";
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,7 +5,11 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
-import './SearchBar.css'
+import { AiOutlineSearch, AiOutlineDown } from "react-icons/ai";
+import { BsFilterRight } from "react-icons/bs";
+import { RiEBikeLine } from "react-icons/ri";
+
+import './SearchBar.css';
 
 export function SearchBar({
     search,

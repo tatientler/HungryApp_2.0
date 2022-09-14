@@ -1,3 +1,9 @@
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+
+import { LikeButton } from "../LikeButton/LikeButton";
+
 import {
     BsPatchCheckFill,
     BsStarHalf,
@@ -5,13 +11,7 @@ import {
     BsFillGeoFill
 } from "react-icons/bs";
 
-import { LikeButton } from "../LikeButton/LikeButton";
-
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-
-import './RestaurantCard.css'
+import './RestaurantCard.css';
 
 export function RestaurantCard(
     {

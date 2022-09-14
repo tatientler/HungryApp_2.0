@@ -6,7 +6,6 @@ import { LoginPage } from './pages/LoginPage'
 import { RestaurantsPage } from './pages/RestaurantsPage'
 import { RestaurantPage } from './pages/RestaurantPage';
 
-
 export function App() {
     const [restaurant, setRestaurant] = useState({})
     const [search, setSearch] = useState('')

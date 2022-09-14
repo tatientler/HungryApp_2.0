@@ -1,24 +1,24 @@
+import { useState } from "react";
+import { Navigate } from 'react-router-dom';
+
 import { Formik } from "formik"
 import {
     SubmitButton,
     Input,
     Form,
     FormItem
-} from "formik-antd"
-import { Row } from "antd"
+} from "formik-antd";
 
-import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
+import { Row } from "antd";
 import { notification } from 'antd';
 
-import { useState } from "react";
-import { Navigate } from 'react-router-dom';
+import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 
-import './LoginForm.css'
+import './LoginForm.css';
 
 export function LoginForm() {
     const [isLogged, setLogin] = useState(false);
     const [error, setError] = useState(false);
-
 
     const openNotificationWithIcon = (type) => {
         notification[type]({
@@ -61,60 +61,58 @@ export function LoginForm() {
     }
 
     return (
-        <>
-            <Formik
-                initialValues={{
-                    email: '',
-                    password: ''
-                }}
-                onSubmit={async (values, actions) => {
-                    await handleLogin(values)
-                    actions.setSubmitting(false)
-                    actions.resetForm()
-                }}
-                render={() => (
-                    <Form className="mb-3 mt-3">
-                        <Row gutter={[8, 8]}>
-                            <FormItem
+        <Formik
+            initialValues={{
+                email: '',
+                password: ''
+            }}
+            onSubmit={async (values, actions) => {
+                await handleLogin(values)
+                actions.setSubmitting(false)
+                actions.resetForm()
+            }}
+            render={() => (
+                <Form className="mb-3 mt-3">
+                    <Row gutter={[8, 8]}>
+                        <FormItem
+                            name={'email'}
+                            required={true}
+                            validate={validateRequired}
+                            style={{ width: '100%' }}
+                        >
+                            <Input
                                 name={'email'}
-                                required={true}
-                                validate={validateRequired}
-                                style={{ width: '100%' }}
-                            >
-                                <Input
-                                    name={'email'}
-                                    type={'email'}
-                                    placeholder='Digite seu e-mail'
+                                type={'email'}
+                                placeholder='Digite seu e-mail'
 
-                                />
-                            </FormItem>
-                        </Row>
+                            />
+                        </FormItem>
+                    </Row>
 
-                        <Row gutter={[8, 8]}>
-                            <FormItem
+                    <Row gutter={[8, 8]}>
+                        <FormItem
+                            name={'password'}
+                            required={true}
+                            validate={validateRequired}
+                            style={{ width: '100%' }}
+                        >
+                            <Input.Password
                                 name={'password'}
-                                required={true}
-                                validate={validateRequired}
-                                style={{ width: '100%' }}
-                            >
-                                <Input.Password
-                                    name={'password'}
-                                    placeholder="Senha"
-                                    iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
-                                />
-                            </FormItem>
-                        </Row>
+                                placeholder="Senha"
+                                iconRender={(visible) => (visible ? <EyeTwoTone /> : <EyeInvisibleOutlined />)}
+                            />
+                        </FormItem>
+                    </Row>
 
-                        <SubmitButton id="btn-enter" className="mt-3">
-                            Entrar
-                        </SubmitButton>
+                    <SubmitButton id="btn-enter" className="mt-3">
+                        Entrar
+                    </SubmitButton>
 
-                        <a className="forgot-password" href="/#">
-                            <p>Esqueci minha senha</p>
-                        </a>
-                    </Form>
-                )}
-            />
-        </>
+                    <a className="forgot-password" href="/#">
+                        <p>Esqueci minha senha</p>
+                    </a>
+                </Form>
+            )}
+        />
     )
 }

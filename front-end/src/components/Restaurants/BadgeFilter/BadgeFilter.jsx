@@ -1,15 +1,15 @@
+import Badge from 'react-bootstrap/Badge';
+import Container from 'react-bootstrap/Container';
+
+import { AiOutlineEnvironment } from "react-icons/ai";
 import {
     BsShop,
     BsCurrencyDollar,
     BsCreditCard,
     BsPatchCheckFill
 } from "react-icons/bs";
-import { AiOutlineEnvironment } from "react-icons/ai";
 
-import Badge from 'react-bootstrap/Badge';
-import Container from 'react-bootstrap/Container';
-
-import './BadgeFilter.css'
+import './BadgeFilter.css';
 
 export function BadgeFilter() {
     return (
