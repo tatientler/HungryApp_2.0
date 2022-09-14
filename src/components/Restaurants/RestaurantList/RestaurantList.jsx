@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 import Row from 'react-bootstrap/Row';
 
-import { RestaurantCard } from "../RestaurantCard/RestaurantCard"
+import { RestaurantCard } from "../RestaurantCard/RestaurantCard";
 
 export function RestaurantList({
     restaurants,

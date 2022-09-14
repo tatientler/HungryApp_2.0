@@ -22,7 +22,6 @@ export function Restaurants({
 
     useEffect(() => {
         getRestaurants()
-        console.log(restaurants)
     }, [])
   
     async function getRestaurants() {
@@ -35,7 +34,6 @@ export function Restaurants({
             .then(response => response.json())
             .then(data => {
                 setRestaurants(data)
-                console.log(restaurants)
             })
     }
 
