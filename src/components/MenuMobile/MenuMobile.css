@@ -1,12 +1,9 @@
-.nav {
-    padding: 0 !important;
-}
-
 .home-icon, 
 .car-shopping-icon, 
 .profile-icon, 
 .logout-icon {
     color: #d93d86;
+    font-size: 16px;
 }
 
 @media screen and (min-width: 940px) {

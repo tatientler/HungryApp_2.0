@@ -72,7 +72,7 @@ export function LoginForm() {
                 actions.resetForm()
             }}
             render={() => (
-                <Form className="mb-3 mt-3">
+                <Form className="mb-2 mt-2">
                     <Row gutter={[8, 8]}>
                         <FormItem
                             name={'email'}
@@ -104,12 +104,12 @@ export function LoginForm() {
                         </FormItem>
                     </Row>
 
-                    <SubmitButton id="btn-enter" className="mt-3">
+                    <SubmitButton id="btn-enter" className="mt-2">
                         Entrar
                     </SubmitButton>
 
                     <a className="forgot-password" href="/#">
-                        <p>Esqueci minha senha</p>
+                        <p className="mb-0 mt-2">Esqueci minha senha</p>
                     </a>
                 </Form>
             )}

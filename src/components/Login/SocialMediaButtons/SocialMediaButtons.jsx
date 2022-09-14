@@ -8,7 +8,7 @@ import './SocialMediaButtons.css';
 export function SocialMediaButtons() {
     return (
         <div className='d-flex justify-content-around mb-3'>
-            <Button className='d-flex align-items-center btn-social-media' variant="outline-dark">
+            <Button className='d-flex align-items-center btn-social-media me-3' variant="outline-dark">
                 <img className="facebook me-2" src={FacebookLogo} alt="Facebook" /> Facebook
             </Button>
 
