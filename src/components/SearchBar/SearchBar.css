@@ -40,9 +40,12 @@
     .filter-icon, 
     .bike-icon, 
     .drop-icon {
-    font-size: 16px;
-    padding: 6px 12px;
-}
+    font-size: 16px;  
+    }
+
+    #filter-btn, #delivery-btn {
+        padding: 6px 12px;
+    }
 }
 
 @media screen and (min-width: 940px) {
