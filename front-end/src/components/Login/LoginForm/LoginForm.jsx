@@ -38,7 +38,7 @@ export function LoginForm() {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/users/login', options)
+            const response = await fetch('https://hungry--app.herokuapp.com/users/login', options)
             if (response.status === 200) {
                 const data = await response.json()
                 localStorage.setItem('token', JSON.stringify(data.token))

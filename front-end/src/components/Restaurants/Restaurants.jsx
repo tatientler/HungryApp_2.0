@@ -26,7 +26,7 @@ export function Restaurants({
     }, [])
   
     async function getRestaurants() {
-        await fetch(`http://localhost:3000/restaurants/all`, {
+        await fetch(`https://hungry--app.herokuapp.com/restaurants/all`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ export function Restaurants({
     }
 
     async function getRestaurant(id) {
-        await fetch(`http://localhost:3000/restaurants/${id}`, {
+        await fetch(`https://hungry--app.herokuapp.com/restaurants/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
