@@ -23,6 +23,8 @@
     border: 2px solid rgb(245, 247, 251);
     border-radius: 10px;
     color: #646464;
+    font-size: 14px;
+    padding: 6px;
 }
 
 .search-icon, 
@@ -30,6 +32,17 @@
 .bike-icon, 
 .drop-icon {
     color: #d93d86;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 640px) {
+    .search-icon, 
+    .filter-icon, 
+    .bike-icon, 
+    .drop-icon {
+    font-size: 16px;
+    padding: 6px 12px;
+}
 }
 
 @media screen and (min-width: 940px) {

@@ -18,7 +18,7 @@ export function SearchBar({
     return (
         <Container className="mb-4 mt-4 searchbar-container">
             <Row className="d-flex justify-content-between">
-                <Col xs={4} md={7} lg={8}>
+                <Col xs={5} md={7} lg={8}>
                     <InputGroup className="d-flex align-items-center justify-content-center search">
                         <Form.Control
                             className="search-bar"
@@ -36,7 +36,7 @@ export function SearchBar({
                     </InputGroup>
                 </Col>
 
-                <Col xs={3} md={2} lg={1} className="d-flex justify-content-center p-0">
+                <Col xs={2} md={2} lg={1} className="d-flex justify-content-center p-0">
                     <Button id="filter-btn" className="d-flex align-items-center">
                         <BsFilterRight className="filter-icon" />&nbsp;Filtros
                     </Button>
