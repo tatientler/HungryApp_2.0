@@ -18,7 +18,7 @@ export function Restaurant({
 
     useEffect(() => {
         const filteredList = restaurant.meals?.filter((meal) => {
-            if (meal?.name.toLowerCase().includes(search)) {
+            if (meal?.name.toLowerCase().includes(search.toLowerCase())) {
                 return restaurant
             }
         })

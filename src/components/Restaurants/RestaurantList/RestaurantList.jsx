@@ -13,7 +13,7 @@ export function RestaurantList({
 
     useEffect(() => {
         const filteredList = restaurants?.filter((restaurant) => {
-            if (restaurant?.name.toLowerCase().includes(search)) {
+            if (restaurant?.name.toLowerCase().includes(search.toLowerCase())) {
                 return restaurant
             }
         })
