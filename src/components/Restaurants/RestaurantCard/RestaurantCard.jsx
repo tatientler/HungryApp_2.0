@@ -49,7 +49,7 @@ export function RestaurantCard(
                                     <span>R$ 5,60</span>
                                 </Card.Text>
                                 <Card.Text className="restaurant-card-description d-flex align-items-center">
-                                    <BsStopwatch className="icon" />&nbsp;
+                                    <BsStopwatch className="watch-icon" />&nbsp;
                                     <span>30min - 50min |&nbsp;</span>
 
                                     <BsFillGeoFill className="gps-icon" />&nbsp;
