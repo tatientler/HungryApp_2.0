@@ -27,7 +27,7 @@ export function NavbarRestaurants() {
                 </Navbar.Collapse>
 
                 <div>
-                    <p className="user-info">Olá! <span>Fred</span>, você está neste endereço?</p>
+                    <p className="user-info">Olá! <span>Tatiane</span>, você está neste endereço?</p>
                     <p className="user-info-address">
                         <AiOutlineEnvironment />
                         <span>Av. Leopoldinho de Oliveira</span>
